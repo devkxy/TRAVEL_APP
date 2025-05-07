@@ -169,20 +169,6 @@
             android:textStyle="bold"
             app:backgroundTint="@null" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnFacebook"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_corner"
-            android:drawableLeft="@drawable/facebook_logo"
-            android:fontFamily="@font/roboto"
-            android:text="Sign Up with Facebook"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:backgroundTint="@null" />
-
         <TextView
             android:id="@+id/tvSignIn"
             android:layout_width="match_parent"

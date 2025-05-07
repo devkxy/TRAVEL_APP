@@ -19,10 +19,8 @@ public class SuperAdminActivity extends AppCompatActivity {
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
-            item.setIcon(R.drawable.home_filled_24px);
 
             if (itemId == R.id.home) {
-                item.setIcon(R.drawable.home_filled_24px);
                 return true;
 
             } else if (itemId == R.id.users) {
@@ -32,13 +30,13 @@ public class SuperAdminActivity extends AppCompatActivity {
                 return true;
 
             } else if (itemId == R.id.packages) {
-                startActivity(new Intent(getApplicationContext(), UsersActivity.class));
+                startActivity(new Intent(getApplicationContext(), BookedActivity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
                 finish();
                 return true;
 
             } else if (itemId == R.id.settings) {
-                startActivity(new Intent(getApplicationContext(), UsersActivity.class));
+                startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
                 finish();
                 return true;

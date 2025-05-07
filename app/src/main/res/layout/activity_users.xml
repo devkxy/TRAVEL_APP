@@ -60,22 +60,33 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="Partners"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:background="@drawable/rounded_edittext"
             android:drawableLeft="@drawable/search_24px"
             android:drawablePadding="10dp"
             android:padding="12dp"
             android:fontFamily="@font/roboto"
-            android:hint="Search Users"
+            android:hint="Search"
             android:drawableTint="@color/colorAccent"
             android:textColorHint="@color/colorAccent"/>
 
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="620dp"
+            android:layout_height="500dp"
             android:layout_marginTop="10dp">
 
             <LinearLayout
@@ -922,7 +933,7 @@
             app:itemIconTint="@drawable/item_selector"
             app:itemRippleColor="@android:color/transparent"
             app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/bottom_menu" >
+            app:menu="@menu/bottom_menu_superadmin" >
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 

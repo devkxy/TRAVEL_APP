@@ -4,29 +4,29 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.*;
-import android.widget.Toolbar;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
-
+public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_profile);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setSelectedItemId(R.id.packages);
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
 
             if (itemId == R.id.home) {
+                startActivity(new Intent(getApplicationContext(), AirlineAdminActivity.class));
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
+                finish();
                 return true;
 
-            } else if (itemId == R.id.bookings) {
+            } else if (itemId == R.id.packages) {
                 startActivity(new Intent(getApplicationContext(), BookingsActivity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
                 finish();
@@ -38,10 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
                 return true;
 
-            } else if (itemId == R.id.user) {
-                startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
-                finish();
+            } else if (itemId == R.id.profile) {
                 return true;
             }
 

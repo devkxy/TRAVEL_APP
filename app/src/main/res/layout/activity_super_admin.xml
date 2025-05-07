@@ -86,7 +86,7 @@
             app:itemIconTint="@drawable/item_selector"
             app:itemRippleColor="@android:color/transparent"
             app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/bottom_menu" >
+            app:menu="@menu/bottom_menu_superadmin" >
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 

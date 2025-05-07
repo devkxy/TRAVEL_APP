@@ -19,27 +19,24 @@ public class UsersActivity extends AppCompatActivity {
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
-            item.setIcon(R.drawable.group_filledf_24px);
 
             if (itemId == R.id.home) {
                 startActivity(new Intent(getApplicationContext(), SuperAdminActivity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
-                item.setIcon(R.drawable.home_filled_24px);
                 finish();
                 return true;
 
             } else if (itemId == R.id.users) {
-                item.setIcon(R.drawable.group_filledf_24px);
                 return true;
 
             } else if (itemId == R.id.packages) {
-                startActivity(new Intent(getApplicationContext(), UsersActivity.class));
+                startActivity(new Intent(getApplicationContext(), BookedActivity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
                 finish();
                 return true;
 
             } else if (itemId == R.id.settings) {
-                startActivity(new Intent(getApplicationContext(), UsersActivity.class));
+                startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
                 finish();
                 return true;

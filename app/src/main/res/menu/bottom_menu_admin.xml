@@ -7,20 +7,14 @@
         android:icon="@drawable/home_24px"/>
 
     <item
-        android:id="@+id/bookings"
-        android:title="Bookings"
+        android:id="@+id/packages"
+        android:title="Packages"
         android:iconTint="@color/colorAccent"
-        android:icon="@drawable/package_24px"/>
+        android:icon="@drawable/assignment_24px"/>
 
     <item
-        android:id="@+id/notifications"
-        android:title="Notifications"
-        android:iconTint="@color/colorAccent"
-        android:icon="@drawable/notifications_24px"/>
-
-    <item
-        android:id="@+id/user"
-        android:title="User"
+        android:id="@+id/profile"
+        android:title="Profile"
         android:iconTint="@color/colorAccent"
         android:icon="@drawable/person_24px"/>
 </menu>

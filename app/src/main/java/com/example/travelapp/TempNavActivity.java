@@ -43,7 +43,7 @@ public class TempNavActivity extends AppCompatActivity {
         btnRegular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(TempNavActivity.this, LoginActivity.class));
+                startActivity(new Intent(TempNavActivity.this, SplashActivity.class));
             }
         });
     }
