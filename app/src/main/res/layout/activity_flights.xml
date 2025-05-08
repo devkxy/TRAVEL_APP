@@ -62,11 +62,11 @@
             android:background="@drawable/rounded_edittext"
             android:drawableLeft="@drawable/search_24px"
             android:drawablePadding="10dp"
-            android:drawableTint="@color/colorAccent"
+            android:drawableTint="@color/black"
             android:fontFamily="@font/roboto"
             android:hint="Search a flight"
             android:padding="12dp"
-            android:textColorHint="@color/colorAccent" />
+            android:textColorHint="@color/black" />
 
     </LinearLayout>
 

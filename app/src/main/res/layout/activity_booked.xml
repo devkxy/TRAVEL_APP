@@ -62,8 +62,8 @@
             android:padding="12dp"
             android:fontFamily="@font/roboto"
             android:hint="Search bookings"
-            android:drawableTint="@color/colorAccent"
-            android:textColorHint="@color/colorAccent"/>
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"/>
 
         <ScrollView
             android:layout_width="match_parent"
