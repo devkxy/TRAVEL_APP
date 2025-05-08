@@ -1,16 +1,5 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/action_favorite"
-        android:icon="@drawable/favorite_24px"
-        android:title="favorites"
-        android:iconTint="@color/yellow"
-        app:showAsAction="ifRoom"/>
-
-    <item android:id="@+id/action_settings"
-        android:title="settings"
-        android:iconTint="@color/colorAccent"
-        app:showAsAction="never"/>
 
 </menu>
