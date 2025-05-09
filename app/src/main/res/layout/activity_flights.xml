@@ -55,40 +55,18 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <LinearLayout
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_edittext"
-                android:drawableLeft="@drawable/search_24px"
-                android:drawablePadding="10dp"
-                android:drawableTint="@color/black"
-                android:fontFamily="@font/roboto"
-                android:hint="Search a flight"
-                android:padding="12dp"
-                android:textColorHint="@color/black" />
-
-            <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/rounded_corner"
-            android:text="Add Flight"
-            android:textColor="@color/white"
-            app:backgroundTint="@color/colorAccent" />
-
-
-        </LinearLayout>
-
-
+            android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/search_24px"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorAccent"
+            android:fontFamily="@font/roboto"
+            android:hint="Search a flight"
+            android:padding="12dp"
+            android:textColorHint="@color/colorAccent" />
 
     </LinearLayout>
 
@@ -161,33 +139,19 @@
                             android:layout_weight="1"
                             android:orientation="vertical">
 
-                            <LinearLayout
+                            <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="MNL to CEB"
-                                    android:textSize="18sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Seat 1"
-                                    android:layout_marginEnd="10dp"
-                                    android:textSize="14sp" />
-
-                            </LinearLayout>
+                                android:text="Manila to Cebu"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:text="Depart"
-                                android:textSize="14sp" />
+                                android:textSize="12sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -216,10 +180,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="30dp"
+                                android:layout_marginTop="10dp"
                                 android:text="Arrive"
                                 android:textAlignment="textEnd"
-                                android:textSize="14sp" />
+                                android:textSize="12sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -283,33 +247,19 @@
                             android:layout_weight="1"
                             android:orientation="vertical">
 
-                            <LinearLayout
+                            <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="MNL to GES"
-                                    android:textSize="18sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Seat 1"
-                                    android:layout_marginEnd="10dp"
-                                    android:textSize="14sp" />
-
-                            </LinearLayout>
+                                android:text="Cebu to Manila"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:text="Depart"
-                                android:textSize="14sp" />
+                                android:textSize="12sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -328,20 +278,21 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Available"
-                                android:textColor="@color/green"
+                                android:text="Fully Booked"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/red"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="30dp"
+                                android:layout_marginTop="10dp"
                                 android:text="Arrive"
                                 android:textAlignment="textEnd"
-                                android:textSize="14sp" />
+                                android:textSize="12sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
