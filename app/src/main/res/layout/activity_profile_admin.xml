@@ -37,15 +37,6 @@
                 app:menu="@menu/appbar_menu"
                 android:fontFamily="@font/pacifico" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_centerInParent="true"
-                android:src="@drawable/person_24px"
-                android:background="@drawable/rounded_image_appbar"
-                android:scaleType="centerCrop"
-                app:tint="@color/white" />
-
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>

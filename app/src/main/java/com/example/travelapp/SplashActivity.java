@@ -27,6 +27,9 @@ public class SplashActivity extends AppCompatActivity {
         textView.startAnimation(slideIn);
         textView2.startAnimation(slideIn);
         textView3.startAnimation(slideIn);
+
+
+
         textView.postDelayed(()->{
             startActivity(new Intent(SplashActivity.this, MainActivity.class));
             finish();
